@@ -19,7 +19,6 @@ namespace StudentManagement.Application.Services
             _unitOfWork = unitOfWork;
         }
 
-        // ================= GET BY ID =================
         public async Task<RoleDto?> GetByIdAsync(int id)
         {
             var role = await _unitOfWork.RoleRepo.GetByIdAsync(id);
@@ -35,7 +34,6 @@ namespace StudentManagement.Application.Services
             };
         }
 
-        // ================= GET ALL =================
         public async Task<IEnumerable<RoleDto>> GetAllAsync()
         {
             var roles = await _unitOfWork.RoleRepo.GetAllAsync();
@@ -49,7 +47,6 @@ namespace StudentManagement.Application.Services
             });
         }
 
-        // ================= CREATE =================
         public async Task AddAsync(CreateRoleDto dto)
         {
             var now = DateTime.UtcNow;
@@ -65,7 +62,6 @@ namespace StudentManagement.Application.Services
             await _unitOfWork.SaveChangesAsync();
         }
 
-        // ================= UPDATE =================
         public async Task UpdateAsync(UpdateRoleDto dto)
         {
             var existingRole = await _unitOfWork.RoleRepo.GetByIdAsync(dto.Id);
@@ -80,7 +76,6 @@ namespace StudentManagement.Application.Services
             await _unitOfWork.SaveChangesAsync();
         }
 
-        // ================= DELETE =================
         public async Task DeleteAsync(int id)
         {
             var role = await _unitOfWork.RoleRepo.GetByIdAsync(id);
