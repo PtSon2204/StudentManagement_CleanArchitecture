@@ -12,3 +12,4 @@ D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\D
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.pdb
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.genruntimeconfig.cache
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\ref\StudentManagement.Domain.dll
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.sourcelink.json

@@ -15,3 +15,4 @@ D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Infrastructu
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Infrastructure\obj\Debug\net8.0\ref\StudentManagement.Infrastructure.dll
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Infrastructure\bin\Debug\net8.0\StudentManagement.Infrastructure.runtimeconfig.json
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Infrastructure\obj\Debug\net8.0\StudentManagement.Infrastructure.genruntimeconfig.cache
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Infrastructure\obj\Debug\net8.0\StudentManagement.Infrastructure.sourcelink.json

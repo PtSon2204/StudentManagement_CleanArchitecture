@@ -154,3 +154,4 @@ D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.API\obj\Debu
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.API\bin\Debug\net8.0\FluentValidation.dll
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.API\obj\Debug\net8.0\StudentManagement.API.sourcelink.json

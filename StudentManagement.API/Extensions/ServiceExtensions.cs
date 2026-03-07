@@ -14,6 +14,7 @@ namespace StudentManagement.API.Extensions
             //services.AddScoped<IStudentService, StudentService>();
             //services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IDepartmentService, DepartmentService>();
 
             //Đăng kí fluentValidation
             services.AddFluentValidationAutoValidation();
