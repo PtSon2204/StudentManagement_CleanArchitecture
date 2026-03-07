@@ -1,0 +1,14 @@
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.AssemblyInfoInputs.cache
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.AssemblyInfo.cs
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.csproj.CoreCompileInputs.cache
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\bin\Debug\net8.0\StudentManagement.Domain.deps.json
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\bin\Debug\net8.0\StudentManagement.Domain.runtimeconfig.json
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\bin\Debug\net8.0\StudentManagement.Domain.dll
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\bin\Debug\net8.0\StudentManagement.Domain.pdb
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.csproj.AssemblyReference.cache
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.dll
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\refint\StudentManagement.Domain.dll
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.pdb
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\StudentManagement.Domain.genruntimeconfig.cache
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Domain\obj\Debug\net8.0\ref\StudentManagement.Domain.dll
