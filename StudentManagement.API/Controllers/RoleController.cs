@@ -16,7 +16,6 @@ namespace StudentManagement.API.Controllers
             _roleService = roleService;
         }
 
-        // ================= GET ALL =================
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -24,7 +23,6 @@ namespace StudentManagement.API.Controllers
             return Ok(roles);
         }
 
-        // ================= GET BY ID =================
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -36,7 +34,6 @@ namespace StudentManagement.API.Controllers
             return Ok(role);
         }
 
-        // ================= CREATE =================
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateRoleDto dto)
         {
@@ -45,7 +42,6 @@ namespace StudentManagement.API.Controllers
             return Created("", new { message = "Role created successfully" });
         }
 
-        // ================= UPDATE =================
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateRoleDto dto)
         {
@@ -57,7 +53,6 @@ namespace StudentManagement.API.Controllers
             return NoContent();
         }
 
-        // ================= DELETE =================
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
