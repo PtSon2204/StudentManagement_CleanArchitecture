@@ -15,3 +15,4 @@ D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Application\
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Application\obj\Debug\net8.0\refint\StudentManagement.Application.dll
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Application\obj\Debug\net8.0\StudentManagement.Application.pdb
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Application\obj\Debug\net8.0\ref\StudentManagement.Application.dll
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.Application\obj\Debug\net8.0\StudentManagement.Application.sourcelink.json

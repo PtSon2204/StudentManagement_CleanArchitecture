@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|solutionrelative:studentmanagement.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|solutionrelative:studentmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|solutionrelative:studentmanagement.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.api\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,45 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Program.cs",
-              "RelativeDocumentMoniker": "StudentManagement.API\\Program.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Program.cs",
-              "RelativeToolTip": "StudentManagement.API\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T14:47:01.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Extensions\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "StudentManagement.API\\Extensions\\ServiceExtensions.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Extensions\\ServiceExtensions.cs",
-              "RelativeToolTip": "StudentManagement.API\\Extensions\\ServiceExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "StudentManagement.Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T14:46:45.192Z",
+              "WhenOpened": "2026-03-07T14:33:12.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T14:33:10.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RoleController.cs",
               "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Controllers\\RoleController.cs",
               "RelativeDocumentMoniker": "StudentManagement.API\\Controllers\\RoleController.cs",
               "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Controllers\\RoleController.cs",
               "RelativeToolTip": "StudentManagement.API\\Controllers\\RoleController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAlwBcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwDAAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T14:36:14.704Z",
+              "WhenOpened": "2026-03-07T14:09:05.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "StudentManagement.API\\Controllers\\DepartmentController.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "StudentManagement.API\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAiwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T14:06:44.029Z",
               "EditorCaption": ""
             }
           ]
