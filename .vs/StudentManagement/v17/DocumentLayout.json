@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\validator\\studentvalidators\\updatestudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\validator\\studentvalidators\\updatestudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46D4E320-F1B5-4588-B312-2F35D140B202}|StudentManagement.Domain\\StudentManagement.Domain.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.domain\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D4E320-F1B5-4588-B312-2F35D140B202}|StudentManagement.Domain\\StudentManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\validator\\studentvalidators\\createstudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\validator\\studentvalidators\\createstudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\validator\\rolevalidators\\updateroledtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\validator\\rolevalidators\\updateroledtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\validator\\departmentvalidators\\updatedepartmentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\validator\\departmentvalidators\\updatedepartmentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|solutionrelative:studentmanagement.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\dtos\\studentdtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\dtos\\studentdtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateRoleDtoValidator.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\RoleValidators\\UpdateRoleDtoValidator.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Validator\\RoleValidators\\UpdateRoleDtoValidator.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\RoleValidators\\UpdateRoleDtoValidator.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Validator\\RoleValidators\\UpdateRoleDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UpdateStudentDtoValidator.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\StudentValidators\\UpdateStudentDtoValidator.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Validator\\StudentValidators\\UpdateStudentDtoValidator.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\StudentValidators\\UpdateStudentDtoValidator.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Validator\\StudentValidators\\UpdateStudentDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:45:42.236Z",
+              "WhenOpened": "2026-03-09T09:44:38.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateDepartmentDtoValidator.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\DepartmentValidators\\UpdateDepartmentDtoValidator.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Validator\\DepartmentValidators\\UpdateDepartmentDtoValidator.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\DepartmentValidators\\UpdateDepartmentDtoValidator.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Validator\\DepartmentValidators\\UpdateDepartmentDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
+              "RelativeToolTip": "StudentManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:45:40.112Z",
+              "WhenOpened": "2026-03-09T09:44:08.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IDepartmentRepository.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Domain\\Interfaces\\IDepartmentRepository.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Domain\\Interfaces\\IDepartmentRepository.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Domain\\Interfaces\\IDepartmentRepository.cs",
-              "RelativeToolTip": "StudentManagement.Domain\\Interfaces\\IDepartmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
+              "Title": "CreateStudentDtoValidator.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\StudentValidators\\CreateStudentDtoValidator.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Validator\\StudentValidators\\CreateStudentDtoValidator.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\StudentValidators\\CreateStudentDtoValidator.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Validator\\StudentValidators\\CreateStudentDtoValidator.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:43:03.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DepartmentService.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Services\\DepartmentService.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Services\\DepartmentService.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Services\\DepartmentService.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Services\\DepartmentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:37:51.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "StudentManagement.API\\Controllers\\DepartmentController.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "StudentManagement.API\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAiwD0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:06:44.029Z",
+              "WhenOpened": "2026-03-09T09:43:35.363Z",
               "EditorCaption": ""
             }
           ]

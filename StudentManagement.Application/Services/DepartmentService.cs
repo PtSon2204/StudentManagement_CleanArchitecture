@@ -31,6 +31,7 @@ namespace StudentManagement.Application.Services
 
             var newDeparment = new Department
             {
+                Id = department.Id,
                 Name = department.Name,
                 CreatedAt = now,
                 UpdatedAt = now

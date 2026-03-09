@@ -12,6 +12,7 @@ namespace StudentManagement.Application.Interfaces
         Task<IEnumerable<StudentDto>> GetAllAsync();
         Task<StudentDto> GetByIdAsync(int id);
         Task CreateAsync(CreateStudentDto dto);
+        Task<IEnumerable<StudentDto>> FilterStudents(string? name, bool? gender, DateTime? dob, double? gpa, string? dept);
         Task UpdateAsync(int id, UpdateStudentDto dto);
         Task DeleteAsync(int id);
     }

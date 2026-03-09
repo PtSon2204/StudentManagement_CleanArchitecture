@@ -8,6 +8,7 @@ namespace StudentManagement.Application.DTOs.DepartmentDtos
 {
     public class CreateDepartmentDto
     {
+        public string Id { get; set; }
         public string Name { get; set; }
     }
 }
