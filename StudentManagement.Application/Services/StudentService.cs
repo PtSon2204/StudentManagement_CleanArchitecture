@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
+using StudentManagement.Application.Common;
 using StudentManagement.Application.DTOs.StudentDtos;
 using StudentManagement.Application.Interfaces;
+using StudentManagement.Application.Queries;
 using StudentManagement.Domain.Entities;
 using StudentManagement.Domain.Interfaces;
 
@@ -13,25 +16,19 @@ namespace StudentManagement.Application.Services
     public class StudentService : IStudentService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public StudentService(IUnitOfWork unitOfWork)
+        public StudentService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
         public async Task CreateAsync(CreateStudentDto dto)
         {
-            var now = DateTime.UtcNow;
+            var newStudent = _mapper.Map<Student>(dto);
 
-            var newStudent = new Student
-            {
-                Name = dto.Name,
-                Gender = dto.Gender,
-                Gpa = dto.Gpa,
-                DepartmentId = dto.DepartmentId,
-                CreatedAt = now,
-                UpdatedAt = now,
-                Dob = dto.Dob,
-            };
+            newStudent.CreatedAt = DateTime.UtcNow;
+            newStudent.UpdatedAt = DateTime.UtcNow;
 
             await _unitOfWork.StudentsRepo.CreateStudent(newStudent);
             await _unitOfWork.SaveChangesAsync();
@@ -54,49 +51,20 @@ namespace StudentManagement.Application.Services
         {
             var students = await _unitOfWork.StudentsRepo.FilterStudent(name, gender, dob, gpa, dept);
 
-            return students.Select(s => new StudentDto
-            {
-                Name = s.Name,
-                Gender = s.Gender,
-                Gpa = s.Gpa,
-                Dob= s.Dob,
-                DepartmentName = s.Department.Name
-            });
+            return _mapper.Map<IEnumerable<StudentDto>>(students);
         }
 
         public async Task<IEnumerable<StudentDto>> GetAllAsync()
         {
             var list = await _unitOfWork.StudentsRepo.GetAllStudents();
 
-            return list.Select(s => new StudentDto
-            {
-                Id = s.Id,
-                Name = s.Name,
-                Gender = s.Gender,
-                Gpa = s.Gpa,
-                Dob = s.Dob,
-                DepartmentId = s.DepartmentId,
-                DepartmentName = s.Department.Name,
-                CreatedAt = s.CreatedAt,
-                UpdatedAt = s.UpdatedAt,
-            });
+            return _mapper.Map<IEnumerable<StudentDto>>(list);
         }
 
         public async Task<StudentDto> GetByIdAsync(int id)
         {
             var s = await _unitOfWork.StudentsRepo.GetStudentbyId(id);
-            return new StudentDto
-            {
-                Id = s.Id,
-                Name = s.Name,
-                Gender = s.Gender,
-                Gpa = s.Gpa,
-                Dob = s.Dob,
-                DepartmentId = s.DepartmentId,
-                DepartmentName = s.Department.Name,
-                CreatedAt = s.CreatedAt,
-                UpdatedAt = s.UpdatedAt,
-            };
+            return _mapper.Map<StudentDto>(s);
         }
 
         public async Task UpdateAsync(int id, UpdateStudentDto dto)
@@ -116,6 +84,20 @@ namespace StudentManagement.Application.Services
 
             _unitOfWork.StudentsRepo.UpdateStudent(st);
             await _unitOfWork.SaveChangesAsync();
+        }
+        public async Task<PagedResult<StudentDto>> GetStudents(StudentQuery query)
+        {
+            var result = await _unitOfWork.StudentsRepo.GetStudents(query);
+
+            return new PagedResult<StudentDto>
+            {
+                PageNumber = result.PageNumber,
+                PageSize = result.PageSize,
+                TotalRecords = result.TotalRecords,
+                TotalPages = result.TotalPages,
+
+                Data = _mapper.Map<IEnumerable<StudentDto>>(result.Data)
+            };
         }
     }
 }
