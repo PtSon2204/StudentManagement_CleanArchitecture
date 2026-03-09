@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\validator\\studentvalidators\\updatestudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\validator\\studentvalidators\\updatestudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\validator\\studentvalidators\\createstudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\validator\\studentvalidators\\createstudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|solutionrelative:studentmanagement.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\dtos\\studentdtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\dtos\\studentdtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A358F025-65FC-49D4-B811-2E7AD38921EF}|StudentManagement.API\\StudentManagement.API.csproj|solutionrelative:studentmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UpdateStudentDtoValidator.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\StudentValidators\\UpdateStudentDtoValidator.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Validator\\StudentValidators\\UpdateStudentDtoValidator.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\StudentValidators\\UpdateStudentDtoValidator.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Validator\\StudentValidators\\UpdateStudentDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T09:44:38.783Z",
+              "WhenOpened": "2026-03-09T16:23:20.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StudentDto.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
-              "RelativeToolTip": "StudentManagement.Application\\DTOs\\StudentDtos\\StudentDto.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBQAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "StudentManagement.API\\Program.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Program.cs",
+              "RelativeToolTip": "StudentManagement.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T09:44:08.313Z",
+              "WhenOpened": "2026-03-09T16:20:56.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateStudentDtoValidator.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\StudentValidators\\CreateStudentDtoValidator.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Validator\\StudentValidators\\CreateStudentDtoValidator.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\Validator\\StudentValidators\\CreateStudentDtoValidator.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Validator\\StudentValidators\\CreateStudentDtoValidator.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABFAAAAAAAAAA==",
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Extensions\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "StudentManagement.API\\Extensions\\ServiceExtensions.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.API\\Extensions\\ServiceExtensions.cs",
+              "RelativeToolTip": "StudentManagement.API\\Extensions\\ServiceExtensions.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwA0AAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T09:43:35.363Z",
+              "WhenOpened": "2026-03-09T16:17:18.348Z",
               "EditorCaption": ""
             }
           ]

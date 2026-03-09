@@ -32,3 +32,4 @@ D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.MVC\obj\Debu
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.MVC\obj\Debug\net8.0\StudentManagement.MVC.pdb
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.MVC\obj\Debug\net8.0\StudentManagement.MVC.genruntimeconfig.cache
 D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.MVC\obj\Debug\net8.0\ref\StudentManagement.MVC.dll
+D:\Semester 7\ProjectManagement\StudentManagement\StudentManagement.MVC\obj\Debug\net8.0\StudentManagement.MVC.sourcelink.json

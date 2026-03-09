@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StudentManagement.Application.DTOs.StudentDtos;
 using StudentManagement.Application.Interfaces;
+using StudentManagement.Application.Queries;
 
 namespace StudentManagement.API.Controllers
 {
@@ -16,6 +18,7 @@ namespace StudentManagement.API.Controllers
             _studentService = studentService;
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> GetAllStudents()
         {
@@ -47,7 +50,7 @@ namespace StudentManagement.API.Controllers
         {
             var result = await _studentService.FilterStudents(name, gender, dob, gpa, dept);
 
-            if (result == null)
+            if (!result.Any())
             {
                 return NotFound("List empty!");
             }
@@ -86,6 +89,14 @@ namespace StudentManagement.API.Controllers
             {
                 message = $"Delete {id} successfully!"
             });
+        }
+
+        [HttpGet("Pagination")]
+        public async Task<IActionResult> GetStudents([FromQuery] StudentQuery query)
+        {
+            var result = await _studentService.GetStudents(query);
+
+            return Ok(result);
         }
     }
 }
