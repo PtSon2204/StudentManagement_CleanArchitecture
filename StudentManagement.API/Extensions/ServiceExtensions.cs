@@ -11,10 +11,10 @@ namespace StudentManagement.API.Extensions
         public static IServiceCollection AddCustomServices(this IServiceCollection services)
         {
             //Đăng kí serivce
-            //services.AddScoped<IStudentService, StudentService>();
             //services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<IDepartmentService, DepartmentService>();
+            services.AddScoped<IStudentService, StudentService>();
 
             //Đăng kí fluentValidation
             services.AddFluentValidationAutoValidation();
