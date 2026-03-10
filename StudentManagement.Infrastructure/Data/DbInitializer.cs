@@ -1,4 +1,5 @@
-﻿using StudentManagement.Domain.Entities;
+﻿using BCrypt.Net;
+using StudentManagement.Domain.Entities;
 
 namespace StudentManagement.Infrastructure.Data
 {
@@ -35,7 +36,7 @@ namespace StudentManagement.Infrastructure.Data
             context.Users.Add(new User
             {
                 Email = "admin@gmail.com",
-                PasswordHash = "123456",
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword("123456"),
                 RoleId = adminRole.Id,
                 CreatedAt = DateTime.UtcNow,
                 IsDeleted = false

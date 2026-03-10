@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\dtos\\authdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\dtos\\authdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.application\\dtos\\authdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{369150B3-6144-4E2B-8755-31FD7633C58D}|StudentManagement.Application\\StudentManagement.Application.csproj|solutionrelative:studentmanagement.application\\dtos\\authdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46D4E320-F1B5-4588-B312-2F35D140B202}|StudentManagement.Domain\\StudentManagement.Domain.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D4E320-F1B5-4588-B312-2F35D140B202}|StudentManagement.Domain\\StudentManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.infrastructure\\identity\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DC3A8A5-2CE0-4310-8120-69AA8676B26C}|StudentManagement.Infrastructure\\StudentManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\identity\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\models\\studentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\models\\studentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\services\\studentapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\services\\studentapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|d:\\semester 7\\projectmanagement\\studentmanagement\\studentmanagement.mvc\\interfaces\\istudentapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038CCED3-8638-4BED-AD27-0AA46FA9F15E}|StudentManagement.MVC\\StudentManagement.MVC.csproj|solutionrelative:studentmanagement.mvc\\interfaces\\istudentapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,67 +58,151 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\DTOs\\AuthDtos\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\DTOs\\AuthDtos\\RegisterDto.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\DTOs\\AuthDtos\\RegisterDto.cs",
-              "RelativeToolTip": "StudentManagement.Application\\DTOs\\AuthDtos\\RegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T15:43:38.939Z",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Role\\Create.cshtml",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Views\\Role\\Create.cshtml",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Role\\Create.cshtml",
+              "RelativeToolTip": "StudentManagement.MVC\\Views\\Role\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T17:22:43.894Z",
               "EditorCaption": ""
             },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Role\\Edit.cshtml",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Views\\Role\\Edit.cshtml",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Role\\Edit.cshtml",
+              "RelativeToolTip": "StudentManagement.MVC\\Views\\Role\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T17:21:35.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Role\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Views\\Role\\Index.cshtml",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Role\\Index.cshtml",
+              "RelativeToolTip": "StudentManagement.MVC\\Views\\Role\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T17:19:01.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Controllers\\RoleController.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "StudentManagement.MVC\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:11:48.35Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\DTOs\\AuthDtos\\LoginDto.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\DTOs\\AuthDtos\\LoginDto.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Application\\DTOs\\AuthDtos\\LoginDto.cs",
-              "RelativeToolTip": "StudentManagement.Application\\DTOs\\AuthDtos\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T15:43:28.583Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Views\\Student\\Create.cshtml",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "StudentManagement.MVC\\Views\\Student\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAawBYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T17:22:37.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Domain\\Entities\\User.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "StudentManagement.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T15:36:48.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "StudentManagement.Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T15:36:42.748Z",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Student\\Edit.cshtml",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Views\\Student\\Edit.cshtml",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Student\\Edit.cshtml",
+              "RelativeToolTip": "StudentManagement.MVC\\Views\\Student\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T17:21:46.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Identity\\JwtService.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Identity\\JwtService.cs",
-              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.Infrastructure\\Identity\\JwtService.cs",
-              "RelativeToolTip": "StudentManagement.Infrastructure\\Identity\\JwtService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "StudentVm.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Models\\StudentVm.cs",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Models\\StudentVm.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Models\\StudentVm.cs",
+              "RelativeToolTip": "StudentManagement.MVC\\Models\\StudentVm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T15:36:18.609Z",
+              "WhenOpened": "2026-03-10T17:20:14.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Views\\Student\\Index.cshtml",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "StudentManagement.MVC\\Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAArwDIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T17:19:06.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "StudentManagement.MVC\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwDQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:11:56.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IStudentApiService.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Interfaces\\IStudentApiService.cs",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Interfaces\\IStudentApiService.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Interfaces\\IStudentApiService.cs",
+              "RelativeToolTip": "StudentManagement.MVC\\Interfaces\\IStudentApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:07:12.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentApiService.cs",
+              "DocumentMoniker": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Services\\StudentApiService.cs",
+              "RelativeDocumentMoniker": "StudentManagement.MVC\\Services\\StudentApiService.cs",
+              "ToolTip": "D:\\Semester 7\\ProjectManagement\\StudentManagement\\StudentManagement.MVC\\Services\\StudentApiService.cs",
+              "RelativeToolTip": "StudentManagement.MVC\\Services\\StudentApiService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAIA5wCcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:00:26.602Z",
               "EditorCaption": ""
             }
           ]

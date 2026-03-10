@@ -11,7 +11,14 @@ namespace StudentManagement.MVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddHttpClient("API", client =>
+            {
+                client.BaseAddress = new Uri("https://localhost:7181/");
+            });
+
             builder.Services.AddScoped<IStudentApiService, StudentApiService>();
+            builder.Services.AddScoped<IRoleApiService, RoleApiService>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

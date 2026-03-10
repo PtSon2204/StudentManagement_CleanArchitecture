@@ -6,6 +6,7 @@ using StudentManagement.Application.Interfaces;
 using StudentManagement.Application.Mappings;
 using StudentManagement.Application.Services;
 using StudentManagement.Application.Validator.RoleValidators;
+using StudentManagement.Infrastructure.Identity;
 
 namespace StudentManagement.API.Extensions
 {
@@ -14,19 +15,21 @@ namespace StudentManagement.API.Extensions
         public static IServiceCollection AddCustomServices(this IServiceCollection services, IConfiguration configuration)
         {
             //Đăng kí serivce
-            //services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<IDepartmentService, DepartmentService>();
             services.AddScoped<IStudentService, StudentService>();
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IUserService, UserService>();
 
             //Đăng kí fluentValidation
             services.AddFluentValidationAutoValidation();
-           services.AddValidatorsFromAssemblyContaining<CreateRoleDtoValidator>();
+            services.AddValidatorsFromAssemblyContaining<CreateRoleDtoValidator>();
 
             //Đăng kí map entity -> dto
             services.AddAutoMapper(typeof(StudentMappingProfile));
 
             //Đăng kí jwt
+            services.AddScoped<JwtService>();
             services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters

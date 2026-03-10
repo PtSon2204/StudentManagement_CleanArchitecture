@@ -18,7 +18,7 @@ namespace StudentManagement.API.Controllers
             _studentService = studentService;
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> GetAllStudents()
         {

@@ -25,26 +25,26 @@ namespace StudentManagement.Application.Services
 
         public async Task<string> LoginAsync(LoginDto dto)
         {
-            //var user = await _unitOfWork.UserRepo.GetByEmail(dto.Email);
+            var user = await _unitOfWork.UserRepo.GetUserByEmail(dto.Email);
 
-            //if (user == null)
-            //{
-            //    throw new Exception("User not found!");
-            //}
+            if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
+            {
+                throw new Exception("Invalid email or password");
+            }
 
-            //bool valid = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
-            //if (!valid)
-            //{
-            //    throw new Exception("Password incorrect!");
-            //}
-
-            //return _jwt.GenerateToken(user);
-            throw new NotImplementedException();
+            return _jwt.GenerateToken(user);
         }
 
         public async Task RegisterAsync(RegisterDto dto)
         {
             var hash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+
+            var existingUser = await _unitOfWork.UserRepo.GetUserByEmail(dto.Email);
+
+            if (existingUser != null)
+            {
+                throw new Exception("Email already exists");
+            }
 
             var user = new User
             {
@@ -53,7 +53,7 @@ namespace StudentManagement.Application.Services
                 RoleId = dto.RoleId,
             };
 
-            //await _unitOfWork.UserRepo.CreateUser(user);
+            await _unitOfWork.UserRepo.CreateUser(user);
             await _unitOfWork.SaveChangesAsync();
         }
     }
