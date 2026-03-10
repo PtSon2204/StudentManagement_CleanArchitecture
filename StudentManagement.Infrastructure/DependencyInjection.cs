@@ -17,7 +17,7 @@ namespace StudentManagement.Infrastructure
             services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
-            services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         }
