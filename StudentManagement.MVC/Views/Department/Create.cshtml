@@ -1,0 +1,21 @@
+﻿@model StudentManagement.MVC.Models.Departments.CreateDepartmentVm
+
+<h2>Thêm phòng ban</h2>
+
+<form asp-action="Create" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label class="form-label">Mã phòng ban</label>
+        <input asp-for="Id" class="form-control" />
+        <span asp-validation-for="Id" class="text-danger" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Tên phòng ban</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Tạo</button>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+
+</form>
