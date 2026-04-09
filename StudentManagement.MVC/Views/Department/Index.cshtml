@@ -1,17 +1,16 @@
-﻿@using StudentManagement.MVC.Common
-@using StudentManagement.MVC.Models.Students
-@model PagedResult<StudentVm>
+﻿@using StudentManagement.MVC.Models.Departments
+@model IEnumerable<StudentManagement.MVC.Models.Departments.DepartmentVm>
 
 @{
-    ViewData["title"] = "Student List";
+    ViewData["title"] = "Department List";
 }
 
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
-        <h3 class="fw-bold mb-1">Danh sách sinh viên</h3>
+        <h3 class="fw-bold mb-1">Danh sách phòng ban</h3>
         <p class="text-muted fs-7 mb-0">Quản lý, tìm kiếm và thao tác với dữ liệu sinh viên.</p>
     </div>
-    <a class="btn btn-primary btn-lg custom-btn-submit px-4 fs-6" asp-action="Create" asp-controller="Student">
+    <a class="btn btn-primary btn-lg custom-btn-submit px-4 fs-6" asp-action="Create" asp-controller="Department">
         <i class="bi bi-plus-lg me-2 fw-bold"></i> Thêm sinh viên
     </a>
 </div>
@@ -22,22 +21,19 @@
             <div class="input-icon">
                 <i class="bi bi-search text-muted" style="position: absolute; left: 15px; top: 12px;"></i>
                 <input type="text" name="Name" value="@ViewBag.Query?.Name"
-                       class="form-control custom-input w-100 ps-5" placeholder="Nhập tên sinh viên cần tìm..." />
+                class="form-control custom-input w-100 ps-5" placeholder="Nhập tên phòng ban cần tìm..." />
             </div>
         </div>
 
-        <div class="col-md-3">
-            <select name="Gender" class="form-select custom-input">
-                <option value="">-- Tất cả giới tính --</option>
-                <option value="true">Nam</option>
-                <option value="false">Nữ</option>
-            </select>
-        </div>
-
-        <div class="col-md-3">
-            <select name="Department" asp-items="ViewBag.Departments" class="form-select custom-input">
-                <option value="">-- Tất cả phòng ban --</option>
-            </select>
+        <div class="col-md-4">
+            <div class="input-icon">
+                <div>
+                    Từ ngày: <input type="date" name="From" value="" />
+                </div>
+                <div>
+                    Đến ngày: <input type="date" name="To" value="" />
+                </div>
+            </div>
         </div>
 
         <div class="col-md-2">
@@ -54,21 +50,21 @@
             <thead>
                 <tr>
                     <th class="ps-4" width="8%">ID</th>
-                    <th width="25%">Họ và Tên</th>
-                    <th width="20%">Phòng ban</th>
+                    <th width="20%">Tên phòng ban</th>
                     <th width="15%">Ngày tạo</th>
                     <th width="15%">Sửa đổi</th>
                     <th class="text-center" width="17%">Thao tác</th>
                 </tr>
             </thead>
             <tbody>
-                @if (Model.Data != null && Model.Data.Any())
+                @if (Model != null)
                 {
-                    @foreach (var item in Model.Data)
+                    @foreach (var item in Model)
                     {
+                        int index = 1;
                         <tr>
                             <td class="ps-4">
-                                <span class="text-muted fw-medium">#@item.Id</span>
+                                <span class="text-muted fw-medium">@index</span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center">
@@ -78,31 +74,23 @@
                                     <span class="fw-bold text-dark fs-6">@item.Name</span>
                                 </div>
                             </td>
-                            <td>
-                                <span class="badge bg-light text-dark border px-2 py-1 fs-7 fw-medium">
-                                    @item.DepartmentName
-                                </span>
-                            </td>
                             <td class="text-muted fs-7">@item.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
                             <td class="text-muted fs-7">@item.UpdatedAt.ToString("dd/MM/yyyy HH:mm")</td>
                             <td class="text-center">
                                 <div class="d-flex justify-content-center gap-2">
-                                    <a asp-action="Details" asp-controller="Student" asp-route-Id="@item.Id"
-                                       class="btn btn-action btn-light text-primary" data-bs-toggle="tooltip" title="Chi tiết">
-                                        <i class="bi bi-eye"></i>
-                                    </a>
-                                    <a asp-action="Edit" asp-controller="Student" asp-route-Id="@item.Id"
-                                       class="btn btn-action btn-light text-warning" data-bs-toggle="tooltip" title="Sửa">
+                                    <a asp-action="Edit" asp-controller="Department" asp-route-Id="@item.Id"
+                                    class="btn btn-action btn-light text-warning" data-bs-toggle="tooltip" title="Sửa">
                                         <i class="bi bi-pencil-square"></i>
                                     </a>
-                                    <a asp-action="Delete" asp-controller="Student" asp-route-Id="@item.Id"
-                                       onclick="return confirm('Bạn có chắc chắn muốn xóa sinh viên này? Hành động này không thể hoàn tác.')"
-                                       class="btn btn-action btn-light text-danger" data-bs-toggle="tooltip" title="Xóa">
+                                    <a asp-action="Delete" asp-controller="Department" asp-route-Id="@item.Id"
+                                    onclick="return confirm('Bạn có chắc chắn muốn xóa sinh viên này? Hành động này không thể hoàn tác.')"
+                                    class="btn btn-action btn-light text-danger" data-bs-toggle="tooltip" title="Xóa">
                                         <i class="bi bi-trash"></i>
                                     </a>
                                 </div>
                             </td>
                         </tr>
+                        index++;
                     }
                 }
                 else
@@ -117,41 +105,6 @@
             </tbody>
         </table>
     </div>
-
-    @if (Model.TotalPages > 1)
-    {
-        <div class="px-4 py-3 border-top d-flex justify-content-between align-items-center bg-white">
-            <span class="text-muted fs-7">
-                Trang @Model.PageNumber / @Model.TotalPages
-            </span>
-            <ul class="pagination custom-pagination mb-0">
-                @if (Model.PageNumber > 1)
-                {
-                    <li class="page-item">
-                        <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PageNumber - 1)">
-                            <i class="bi bi-chevron-left"></i>
-                        </a>
-                    </li>
-                }
-
-                @for (int i = 1; i <= Model.TotalPages; i++)
-                {
-                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
-                        <a class="page-link" asp-action="Index" asp-route-pageNumber="@i">@i</a>
-                    </li>
-                }
-
-                @if (Model.PageNumber < Model.TotalPages)
-                {
-                    <li class="page-item">
-                        <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PageNumber + 1)">
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                    </li>
-                }
-            </ul>
-        </div>
-    }
 </div>
 
 <style>

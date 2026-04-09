@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
+using StudentManagement.MVC.Common;
 using StudentManagement.MVC.Interfaces;
-using StudentManagement.MVC.Models;
+using StudentManagement.MVC.Models.Students;
 
 namespace StudentManagement.MVC.Services
 {
@@ -13,14 +14,14 @@ namespace StudentManagement.MVC.Services
             _httpClient = factory.CreateClient("API");
         }
 
-        public async Task Create(StudentVm student)
+        public async Task Create(CreateStudentVm student)
         {
             await _httpClient.PostAsJsonAsync("api/Student", student);
         }
 
         public async Task DeleteStudent(int id)
         {
-            await _httpClient.DeleteAsync($"api/Student/{id}");
+            await _httpClient.DeleteAsync($"api/Student/{id}"); 
         }
 
         public Task<List<StudentVm>> FilterStudents(string? name, bool? gender, DateTime? dob, double? gpa, string? dept)
@@ -53,9 +54,27 @@ namespace StudentManagement.MVC.Services
             return JsonSerializer.Deserialize<StudentVm>(data, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
         }
 
-        public async Task Update(int id, StudentVm student)
+        public async Task Update(int id, UpdateStudentVm student)
         {
             await _httpClient.PutAsJsonAsync($"api/Student/{id}", student);
+        }
+        public async Task<PagedResult<StudentVm>> GetStudents(StudentQueryVm query)
+        {
+            var url = $"api/Student/Pagination?" +
+                      $"PageNumber={query.PageNumber}&" +
+                      $"PageSize={query.PageSize}&" +
+                      $"Name={query.Name}&" +
+                      $"Gender={query.Gender}&" +
+                      $"Department={query.Department}";
+
+            var response = await _httpClient.GetAsync(url);
+
+            response.EnsureSuccessStatusCode();
+
+            var data = await response.Content.ReadAsStringAsync();
+
+            return JsonSerializer.Deserialize<PagedResult<StudentVm>>(data,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
         }
     }
 }
