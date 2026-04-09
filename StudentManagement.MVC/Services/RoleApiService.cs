@@ -22,7 +22,7 @@ namespace StudentManagement.MVC.Services
             var data = await response.Content.ReadAsStringAsync();
 
             return JsonSerializer.Deserialize<List<RoleVm>>(data,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
         }
 
         public async Task<RoleVm> GetById(int id)
@@ -34,7 +34,7 @@ namespace StudentManagement.MVC.Services
             var data = await response.Content.ReadAsStringAsync();
 
             return JsonSerializer.Deserialize<RoleVm>(data,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
         }
 
         public async Task Create(RoleVm role)

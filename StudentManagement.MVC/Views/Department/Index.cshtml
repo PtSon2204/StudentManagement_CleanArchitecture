@@ -11,7 +11,7 @@
         <p class="text-muted fs-7 mb-0">Quản lý, tìm kiếm và thao tác với dữ liệu sinh viên.</p>
     </div>
     <a class="btn btn-primary btn-lg custom-btn-submit px-4 fs-6" asp-action="Create" asp-controller="Department">
-        <i class="bi bi-plus-lg me-2 fw-bold"></i> Thêm sinh viên
+        <i class="bi bi-plus-lg me-2 fw-bold"></i> Thêm phòng ban
     </a>
 </div>
 
@@ -64,7 +64,7 @@
                         int index = 1;
                         <tr>
                             <td class="ps-4">
-                                <span class="text-muted fw-medium">@index</span>
+                                <span class="text-muted fw-medium">@index++</span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center">
@@ -78,19 +78,18 @@
                             <td class="text-muted fs-7">@item.UpdatedAt.ToString("dd/MM/yyyy HH:mm")</td>
                             <td class="text-center">
                                 <div class="d-flex justify-content-center gap-2">
-                                    <a asp-action="Edit" asp-controller="Department" asp-route-Id="@item.Id"
+                                    <a asp-action="Update" asp-controller="Department" asp-route-Id="@item.Id"
                                     class="btn btn-action btn-light text-warning" data-bs-toggle="tooltip" title="Sửa">
                                         <i class="bi bi-pencil-square"></i>
                                     </a>
                                     <a asp-action="Delete" asp-controller="Department" asp-route-Id="@item.Id"
-                                    onclick="return confirm('Bạn có chắc chắn muốn xóa sinh viên này? Hành động này không thể hoàn tác.')"
+                                    onclick="return confirm('Bạn có chắc chắn muốn xóa phòng ban này? Hành động này không thể hoàn tác.')"
                                     class="btn btn-action btn-light text-danger" data-bs-toggle="tooltip" title="Xóa">
                                         <i class="bi bi-trash"></i>
                                     </a>
                                 </div>
                             </td>
                         </tr>
-                        index++;
                     }
                 }
                 else
