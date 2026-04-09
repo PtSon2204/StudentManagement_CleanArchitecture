@@ -1,4 +1,4 @@
-﻿namespace StudentManagement.MVC.Models
+﻿namespace StudentManagement.MVC.Models.Students
 {
     public class StudentVm
     {

@@ -18,6 +18,7 @@ namespace StudentManagement.MVC
 
             builder.Services.AddScoped<IStudentApiService, StudentApiService>();
             builder.Services.AddScoped<IRoleApiService, RoleApiService>();
+            builder.Services.AddScoped<IDepartmentApiService, DepartmentApiService>();
 
             var app = builder.Build();
 
