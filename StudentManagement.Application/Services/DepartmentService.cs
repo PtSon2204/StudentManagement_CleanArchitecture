@@ -5,10 +5,12 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StudentManagement.Application.Common;
 using StudentManagement.Application.DTOs.DepartmentDtos;
 using StudentManagement.Application.Interfaces;
 using StudentManagement.Domain.Entities;
 using StudentManagement.Domain.Interfaces;
+using StudentManagement.Domain.Queries;
 
 namespace StudentManagement.Application.Services
 {
@@ -60,6 +62,25 @@ namespace StudentManagement.Application.Services
                 CreatedAt = department.CreatedAt,
                 UpdatedAt = department.UpdatedAt
             });
+        }
+
+        public async Task<PagedResult<DepartmentDto>> FilterAllDepartmentsAsync(DepartmentQuery query)
+        {
+            var result = await _unitOfWork.DepartmentRepo.GetAllDepartmentPagedResults(query);
+
+            return new PagedResult<DepartmentDto>
+            {
+                PageNumber = result.PageNumber,
+                PageSize = result.PageSize,
+                TotalPages = result.TotalPages,
+                TotalRecords = result.TotalRecords,
+
+                Data = result.Data.Select(x => new DepartmentDto
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                })
+            };
         }
 
         public async Task<DepartmentDto?> GetDepartmentById(string id)

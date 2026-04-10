@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using StudentManagement.Application.DTOs.DepartmentDtos;
 using StudentManagement.Application.Interfaces;
 using StudentManagement.Application.Services;
+using StudentManagement.Domain.Queries;
 
 namespace StudentManagement.API.Controllers
 {
@@ -77,6 +78,14 @@ namespace StudentManagement.API.Controllers
             {
                 message = $"{dept} update successfully!"
             });
+        }
+
+        [HttpGet("Pagination")]
+        public async Task<IActionResult> FilterDepartment([FromQuery] DepartmentQuery query)
+        {
+            var result = await _departmentService.FilterAllDepartmentsAsync(query);
+
+            return Ok(result);
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using System.Text.Json;
+using StudentManagement.MVC.Common;
 using StudentManagement.MVC.Interfaces;
 using StudentManagement.MVC.Models.Departments;
+using StudentManagement.MVC.Models.Students;
 
 namespace StudentManagement.MVC.Services
 {
@@ -20,6 +22,25 @@ namespace StudentManagement.MVC.Services
         public async Task Delete(string id)
         {
             await _httpClient.DeleteAsync($"api/Department/{id}");
+        }
+
+        public async Task<PagedResult<DepartmentVm>> FilterAllAsync(DepartmentQueryVm query)
+        {
+            var url = $"api/Department/Pagination?" +
+                      $"PageNumber={query.PageNumber}&" +
+                      $"PageSize={query.PageSize}&" +
+                      $"Name={query.Name}&" +
+                      $"From={query.From}&" +
+                      $"To={query.To}";
+
+            var response = await _httpClient.GetAsync(url);
+
+            response.EnsureSuccessStatusCode();
+
+            var data = await response.Content.ReadAsStringAsync();
+
+            return JsonSerializer.Deserialize<PagedResult<DepartmentVm>>(data,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
         }
 
         public async Task<IEnumerable<DepartmentVm>> GetAll()

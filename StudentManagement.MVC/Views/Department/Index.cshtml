@@ -1,5 +1,5 @@
 ﻿@using StudentManagement.MVC.Models.Departments
-@model IEnumerable<StudentManagement.MVC.Models.Departments.DepartmentVm>
+@model StudentManagement.MVC.Common.PagedResult<DepartmentVm>
 
 @{
     ViewData["title"] = "Department List";
@@ -21,23 +21,27 @@
             <div class="input-icon">
                 <i class="bi bi-search text-muted" style="position: absolute; left: 15px; top: 12px;"></i>
                 <input type="text" name="Name" value="@ViewBag.Query?.Name"
-                class="form-control custom-input w-100 ps-5" placeholder="Nhập tên phòng ban cần tìm..." />
+                       class="form-control custom-input w-100 ps-5" placeholder="Nhập tên phòng ban cần tìm..." />
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="input-icon">
-                <div>
-                    Từ ngày: <input type="date" name="From" value="" />
+        <div class="col-md-6">
+            <div class="d-flex flex-column flex-sm-row gap-2 align-items-center date-filter-group">
+                <div class="d-flex align-items-center w-100">
+                    <span class="text-muted fw-medium me-2 whitespace-nowrap" style="min-width: 70px;">Từ ngày:</span>
+                    <input type="date" name="From" value="@ViewBag.Query?.From?.ToString("yyyy-MM-dd")"
+                           class="form-control custom-input" />
                 </div>
-                <div>
-                    Đến ngày: <input type="date" name="To" value="" />
+                <div class="d-flex align-items-center w-100 mt-2 mt-sm-0">
+                    <span class="text-muted fw-medium me-2 whitespace-nowrap" style="min-width: 75px;">Đến ngày:</span>
+                    <input type="date" name="To" value="@ViewBag.Query?.To?.ToString("yyyy-MM-dd")"
+                           class="form-control custom-input" />
                 </div>
             </div>
         </div>
 
         <div class="col-md-2">
-            <button class="btn btn-primary custom-btn-submit w-100 py-2">
+            <button type="submit" class="btn btn-primary custom-btn-submit w-100 py-2">
                 <i class="bi bi-funnel me-1"></i> Lọc dữ liệu
             </button>
         </div>
@@ -57,14 +61,14 @@
                 </tr>
             </thead>
             <tbody>
-                @if (Model != null)
+                @if (Model.Data != null)
                 {
-                    @foreach (var item in Model)
+                    int index = 1;
+                    @foreach (var item in Model.Data)
                     {
-                        int index = 1;
                         <tr>
                             <td class="ps-4">
-                                <span class="text-muted fw-medium">@index++</span>
+                                <span class="text-muted fw-medium">@(index++)</span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center">
@@ -104,6 +108,41 @@
             </tbody>
         </table>
     </div>
+
+    @if (Model.TotalPages > 1)
+    {
+        <div class="px-4 py-3 border-top d-flex justify-content-between align-items-center bg-white">
+            <span class="text-muted fs-7">
+                Trang @Model.PageNumber / @Model.TotalPages
+            </span>
+            <ul class="pagination custom-pagination mb-0">
+                @if (Model.PageNumber > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PageNumber - 1)">
+                            <i class="bi bi-chevron-left"></i>
+                        </a>
+                    </li>
+                }
+
+                @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" asp-action="Index" asp-route-pageNumber="@i">@i</a>
+                    </li>
+                }
+
+                @if (Model.PageNumber < Model.TotalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PageNumber + 1)">
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
 </div>
 
 <style>
@@ -223,6 +262,20 @@
     .fs-7 {
         font-size: 0.875rem;
     }
+
+    /* Đảm bảo icon lịch trong thẻ input type="date" không bị lệch */
+    input[type="date"].custom-input::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: 0.2s;
+    }
+
+        input[type="date"].custom-input::-webkit-calendar-picker-indicator:hover {
+            opacity: 1;
+        }
+
+    /* Trên màn hình nhỏ, ô filter sẽ chiếm toàn bộ chiều ngang */
+
 </style>
 
 <script>

@@ -37,10 +37,8 @@ namespace StudentManagement.MVC.Services
 
             var data = await response.Content.ReadAsStringAsync();
 
-            var students = JsonSerializer.Deserialize<List<StudentVm>>(data,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-
-            return students;
+            return JsonSerializer.Deserialize<List<StudentVm>>(data,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
         }
 
         public async Task<StudentVm> GetStudentById(int id)
@@ -51,7 +49,7 @@ namespace StudentManagement.MVC.Services
 
             var data = await response.Content.ReadAsStringAsync();
 
-            return JsonSerializer.Deserialize<StudentVm>(data, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            return JsonSerializer.Deserialize<StudentVm>(data, new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
         }
 
         public async Task Update(int id, UpdateStudentVm student)
@@ -74,7 +72,7 @@ namespace StudentManagement.MVC.Services
             var data = await response.Content.ReadAsStringAsync();
 
             return JsonSerializer.Deserialize<PagedResult<StudentVm>>(data,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
         }
     }
 }
