@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using StudentManagement.Application.Common;
 using StudentManagement.Domain.Entities;
 using StudentManagement.Domain.Interfaces;
+using StudentManagement.Domain.Queries;
 using StudentManagement.Infrastructure.Data;
 
 namespace StudentManagement.Infrastructure.Repositories
@@ -32,6 +34,41 @@ namespace StudentManagement.Infrastructure.Repositories
         public async Task<IEnumerable<Department>> GetAllDepartment()
         {
             return await context.Departments.ToListAsync();
+        }
+
+        public async Task<PagedResult<Department>> GetAllDepartmentPagedResults(DepartmentQuery query)
+        {
+            var dept = context.Departments.AsQueryable();
+
+            if (!string.IsNullOrEmpty(query.Name))
+            {
+                dept = dept.Where(x => x.Name == query.Name);
+            }
+
+            if (query.StartDate.HasValue)
+            {
+                dept = dept.Where(x => x.UpdatedAt >= query.StartDate.Value);
+            }
+
+            if (query.EndDate.HasValue)
+            {
+                dept = dept.Where(x => x.UpdatedAt <= query.EndDate.Value);
+            }
+
+            var totalRecords = await dept.CountAsync();
+
+            var data = await dept.Skip((query.PageNumber - 1) * query.PageSize)
+                                 .Take(query.PageSize)
+                                 .ToListAsync();
+
+            return new PagedResult<Department>
+            {
+                Data = data,
+                PageNumber = query.PageNumber,
+                PageSize = query.PageSize,
+                TotalRecords = totalRecords,
+                TotalPages = (int)Math.Ceiling(totalRecords / (double)query.PageSize)
+            };
         }
 
         public async Task<Department?> GetDepartmentById(string id)

@@ -114,8 +114,8 @@ namespace StudentManagement.Infrastructure.Data
             {
                 if (entry.State == EntityState.Added)
                 {
-                    entry.Entity.CreatedAt = DateTime.UtcNow;
-                    entry.Entity.UpdatedAt = DateTime.UtcNow;
+                    entry.Entity.CreatedAt = DateTime.Now;
+                    entry.Entity.UpdatedAt = DateTime.Now;
 
                 }
 

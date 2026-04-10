@@ -27,8 +27,8 @@ namespace StudentManagement.Application.Services
         {
             var newStudent = _mapper.Map<Student>(dto);
 
-            newStudent.CreatedAt = DateTime.UtcNow;
-            newStudent.UpdatedAt = DateTime.UtcNow;
+            newStudent.CreatedAt = DateTime.Now;
+            newStudent.UpdatedAt = DateTime.Now;
 
             await _unitOfWork.StudentsRepo.CreateStudent(newStudent);
             await _unitOfWork.SaveChangesAsync();

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StudentManagement.Application.Common;
 using StudentManagement.Application.DTOs.DepartmentDtos;
+using StudentManagement.Domain.Queries;
 
 namespace StudentManagement.Application.Interfaces
 {
@@ -14,5 +16,6 @@ namespace StudentManagement.Application.Interfaces
         Task CreateDepartmentAsync(CreateDepartmentDto department);
         Task UpdateDepartmentAsync(UpdateDepartmentDto department);
         Task DeleteDepartmentAsync(string id);
+        Task<PagedResult<DepartmentDto>> FilterAllDepartmentsAsync(DepartmentQuery query);
     }
 }

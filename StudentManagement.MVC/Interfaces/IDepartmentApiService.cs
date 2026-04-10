@@ -1,4 +1,5 @@
-﻿using StudentManagement.MVC.Models.Departments;
+﻿using StudentManagement.MVC.Common;
+using StudentManagement.MVC.Models.Departments;
 
 namespace StudentManagement.MVC.Interfaces
 {
@@ -9,5 +10,6 @@ namespace StudentManagement.MVC.Interfaces
         Task Update(string id, UpdateDepartmentVm department);
         Task Delete(string id);    
         Task<DepartmentVm> GetById(string id);
+        Task <PagedResult<DepartmentVm>> FilterAllAsync(DepartmentQueryVm query);
     }
 }
